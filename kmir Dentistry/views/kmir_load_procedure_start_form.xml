@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <record id="view_kmir_load_procedure_start_form" model="ir.ui.view">
+            <field name="name">kmir.load.procedure.start.form</field>
+            <field name="model">kmir.dentistry.treatment</field>
+            <field name="arch" type="xml">
+                <form>
+                    <separator string="Load Procedure"/>
+                    <field name="procedure"/>
+                    <!-- Add more fields as needed -->
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

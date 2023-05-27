@@ -1,0 +1,35 @@
+<record id="view_kimr_dentistry_treatment_form" model="ir.ui.view">
+    <field name="name">kimr.dentistry.treatment.form</field>
+    <field name="model">kimr.dentistry.treatment</field>
+    <field name="arch" type="xml">
+        <form>
+            <sheet>
+                <group>
+                    <group>
+                        <field name="patient"/>
+                        <field name="treatment_date"/>
+                        <field name="healthprof"/>
+                    </group>
+                    <group>
+                        <button name="load_procedure" string="Load Procedure" icon="fa-pencil"/>
+                        <button name="set_odontogram" string="Set Odontogram" icon="fa-pencil"/>
+                    </group>
+                </group>
+                <field name="procedures"/>
+                <group>
+                    <field name="notes"/>
+                </group>
+                <group>
+                    <group>
+                        <field name="state"/>
+                        <field name="signed_by"/>
+                    </group>
+                    <group>
+                        <button name="end_treatment" string="Done" icon="fa-check"
+                            confirm="End this treatment?" class="oe_highlight"/>
+                    </group>
+                </group>
+            </sheet>
+        </form>
+    </field>
+</record>

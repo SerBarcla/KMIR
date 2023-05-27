@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Dentistry information in the Contact/Partner form -->
+        <record model="ir.ui.view" id="your_module_contact_form_inherit_view">
+            <field name="name">your_module.contact.form.inherit.view</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <!-- Add Dentistry related fields here -->
+                <!-- Example: -->
+                <page name="dentistry_info" string="Dentistry">
+                    <group>
+                        <!-- Add Dentistry fields here -->
+                    </group>
+                </page>
+            </field>
+        </record>
+
+        <!-- Set Odontogram button -->
+        <record model="ir.model.button" id="your_module_set_odontogram_button">
+            <field name="name">set_odontogram_wizard</field>
+            <field name="string">Set Odontogram</field>
+            <field name="model_id" ref="model_res_partner"/>
+        </record>
+
+        <!-- Dentistry Treatment -->
+        <record model="ir.ui.view" id="your_module_dentistry_treatment_form_view">
+            <field name="model">your_module.dentistry.treatment</field>
+            <field name="type">form</field>
+            <field name="name">your_module_dentistry_treatment_form_view</field>
+        </record>
+
+        <record model="ir.ui.view" id="your_module_dentistry_treatment_tree_view">
+            <field name="model">your_module.dentistry.treatment</field>
+            <field name="type">tree</field>
+            <field name="name">your_module_dentistry_treatment_tree_view</field>
+        </record>
+
+        <!-- Shortcut to Dentistry treatment in the Contact/Partner form -->
+        <record model="ir.actions.act_window" id="your_module_action_dentistry_treatment_form">
+            <field name="name">Dentistry Treatments</field>
+            <field name="res_model">your_module.dentistry.treatment</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('partner_id', '=', active_id)]</field>
+        </record>
+
+        <record model="ir.actions.client" id="your_module_action_open_dentistry_treatment_keyword">
+            <field name="name">Open Dentistry Treatments</field>
+            <field name="tag">your_module_action_open_dentistry_treatment_keyword</field>
+            <field name="target">new</field>
+            <field name="context">{'search_default_partner_id': active_id}</field>
+            <field name="domain">[('partner_id', '=', active_id)]</field>
+        </record>
+
+        <!-- Dentistry Procedure -->
+        <record model="ir.ui.view" id="your_module_dentistry_procedure_form_view">
+            <field name="model">your_module.dentistry.procedure</field>
+            <field name="type">form</field>
+            <field name="name">your_module_dentistry_procedure_form_view</field>
+        </record>
+
+        <record model="ir.ui.view" id="your_module_dentistry_procedure_tree_view">
+            <field name="model">your_module.dentistry.procedure</field>
+            <field name="type">tree</field>
+            <field

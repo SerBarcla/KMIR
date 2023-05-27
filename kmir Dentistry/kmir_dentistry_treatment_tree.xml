@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+        <record id="view_kmir_dentistry_treatment_tree" model="ir.ui.view">
+            <field name="name">kmir.dentistry.treatment.tree</field>
+            <field name="model">kmir.dentistry.treatment</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="patient"/>
+                    <field name="treatment_date"/>
+                    <field name="healthprof"/>
+                    <field name="state"/>
+                    <field name="procedures_info"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

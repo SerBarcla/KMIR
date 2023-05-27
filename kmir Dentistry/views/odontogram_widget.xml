@@ -1,0 +1,9 @@
+<templates xml:space="preserve">
+    <t t-name="your_module_name.odontogram_widget">
+        <!-- Define the HTML structure and CSS styles for the odontogram widget -->
+        <!-- Customize it according to your graphical representation requirements -->
+        <div class="odontogram-widget">
+            <!-- Odontogram graphical representation goes here -->
+        </div>
+    </t>
+</templates>

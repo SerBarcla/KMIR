@@ -1,0 +1,18 @@
+<odoo>
+    <data>
+        <!-- Dentistry Procedure Tree View -->
+        <record id="view_dentistry_procedure_tree" model="ir.ui.view">
+            <field name="name">dentistry.procedure.tree</field>
+            <field name="model">dentistry.procedure</field>
+            <field name="arch" type="xml">
+                <tree string="Dentistry Treatment Procedures" create="false">
+                    <field name="procedure"/>
+                    <field name="tooth"/>
+                    <field name="surface"/>
+                    <field name="status"/>
+                    <!-- Add more fields as needed -->
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

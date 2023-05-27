@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <form string="Dentistry Treatment Procedure" name="kimr_dentistry_treatment_procedure_form">
+            <sheet>
+                <group string="Dentistry Treatment Procedure" col="4">
+                    <field name="procedure"/>
+                    <field name="tooth"/>
+                    <field name="surface"/>
+                    <field name="status"/>
+                    <!-- Add more fields as needed -->
+                </group>
+            </sheet>
+        </form>
+    </data>
+</odoo>
