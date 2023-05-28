@@ -1,7 +1,7 @@
 <odoo>
     <data>
         <menuitem id="menu_dentistry" name="Dentistry" action="action_dentistry" sequence="10"/> 
-        <record id="action_dentistry" model="ir.actions.act_window">
+        <record id="action_dentistry" model="ir.actions.act_window"/>
             <field name="name">Dentistry</field>
             <field name="res_model">Dentistry.py</field>
             <field name="view_mode">tree,form</field>
