@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Dentistry Access Control List -->
+    <record id="model_dentistry_user" model="ir.model.access">
+        <field name="name">Dentistry User</field>
+        <field name="model_id" ref="model_dentistry_dentistry"/>
+        <field name="group_id" ref="base.group_user"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+    </record>
+
+    <record id="model_dentistry_manager" model="ir.model.access">
+        <field name="name">Dentistry Manager</field>
+        <field name="model_id" ref="model_dentistry_dentistry"/>
+        <field name="group_id" ref="base.group_erp_manager"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+    </record>
+</odoo>
