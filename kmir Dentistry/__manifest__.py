@@ -2,6 +2,7 @@
     'name': 'Dentistry',
     'summary': 'Module for dentists',
     'author': 'Mr Barcla',
+    'icon': 'icon.png',
     'category': 'Services/Medical',
     'license': 'AGPL-3',
     'website': 'https://www.datalabs.space',
