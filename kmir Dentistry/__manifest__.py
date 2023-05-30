@@ -3,6 +3,9 @@
     'version': '1.0',
     'author': 'Mr Barcla',
     'category': 'Services/Medical',
+    "license": "AGPL-3",
+    "website": "https://www.datalabs.space",
+    "version": "16.0.1.0",
     'depends': [
         'base',
         # Add other dependencies if needed
