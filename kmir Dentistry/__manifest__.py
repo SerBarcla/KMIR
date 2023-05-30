@@ -1,10 +1,11 @@
 {
     'name': 'Dentistry',
+    'summary': 'Module for dentists',
     'author': 'Mr Barcla',
     'category': 'Services/Medical',
-    "license": "AGPL-3",
-    "website": "https://www.datalabs.space",
-    "version": "16.0.1.0",
+    'license': 'AGPL-3',
+    'website': 'https://www.datalabs.space',
+    'version': '16.0.1.0',
     'depends': [
         'base',
         # Add other dependencies if needed
@@ -20,8 +21,8 @@
         'views/kmir_set_odontogram_start_form.xml',
         'views/kmir_dentistry_odontogram_form.xml',
         'views/odontogram_widget.xml',
-        'views/Dentistry_views.xml.xml',
-        'security/ir.model.security.csv',
+        'views/dentistry_views.xml',
+        'security/ir.model.access.csv',
         'security/dentistry_security.xml',
         
         # Add other XML files as needed
