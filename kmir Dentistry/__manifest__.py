@@ -1,8 +1,10 @@
 {
     'name': 'Dentistry',
-    'version': '1.0',
     'author': 'Mr Barcla',
-    'category': 'Medical',
+    'category': 'Services/Medical',
+    "license": "AGPL-3",
+    "website": "https://www.datalabs.space",
+    "version": "16.0.1.0",
     'depends': [
         'base',
         # Add other dependencies if needed
@@ -19,6 +21,9 @@
         'views/kmir_dentistry_odontogram_form.xml',
         'views/odontogram_widget.xml',
         'views/Dentistry_views.xml.xml',
+        'security/ir.model.security.csv',
+        'security/dentistry_security.xml',
+        
         # Add other XML files as needed
     ],
     'qweb': [
