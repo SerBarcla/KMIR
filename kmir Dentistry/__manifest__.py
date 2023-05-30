@@ -1,6 +1,5 @@
 {
     'name': 'Dentistry',
-    'version': '1.0',
     'author': 'Mr Barcla',
     'category': 'Services/Medical',
     "license": "AGPL-3",
